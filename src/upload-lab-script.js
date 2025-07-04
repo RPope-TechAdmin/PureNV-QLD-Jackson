@@ -44,7 +44,7 @@ async function uploadFile(file) {
   formData.append("file", file); // must match backend's expected key
 
   try {
-    const response = await fetch("jackson-backend-jackson-e0bycnfwgrhzana9.australiaeast-01.azurewebsites.net/api/lab-data", {
+    const response = await fetch("https://jackson-backend-jackson-e0bycnfwgrhzana9.australiaeast-01.azurewebsites.net/api/lab-data", {
       method: "POST",
       body: formData,
       headers: {
