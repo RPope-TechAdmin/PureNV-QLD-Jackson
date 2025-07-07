@@ -48,6 +48,7 @@ async function uploadFile(file) {
       method: "POST",
       body: formData,
       headers: {
+        "Content-Type": "application/json",
         "Accept": "application/json"
       }
     });
