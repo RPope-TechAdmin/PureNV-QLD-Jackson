@@ -58,7 +58,7 @@ async function uploadFile(file) {
 
     let data;
     try {
-      data = JSON.parse(text);
+      data = JSON.parse(text);  // <== JSON error caught here
     } catch {
       throw new Error("Invalid JSON returned:\n" + text);
     }
