@@ -34,8 +34,17 @@
                 <img src="Assets/images/Horizontal_Decal.png" alt="PureNV-Decal"/>
             </div>
             <h3 class="upload-text">To upload lab data, just upload the file into the box below, then hit the 'Submit' button. Don't worry, I'll take care of the rest.</h3>
+            <form id="upload-form" class="dropdown">
+                <label for="query-type">Select from the following laboratory data types:</label>
+                <select id="query-type" name="query-type">
+                    <option value="DS-PFAS">Dust Suppression - PFAS</option>
+                    <option value="DS-INT">Dust Suppression - Internal</option>
+                    <option value="DS-EXT">Dust Suppression - External</option>
+                </select>
+                <input class="uploader" type="file" id="file-input" accept=".pdf" />
+                <button type="submit" class="submit-lab">Submit</button>
+            </form>
             <div class="drop-area" id="drop-zone">Drop your excel file here, or click to search for it.</div>
-            <input class="uploader" type="file" id="file-input" accept=".pdf" />
             <pre class="output" id="output"></pre>
 
             <script src="upload-lab-script.js"></script>
