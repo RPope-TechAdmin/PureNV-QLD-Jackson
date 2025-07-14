@@ -3,35 +3,30 @@ const dropZone = document.getElementById('drop-zone');
 const fileInput = document.getElementById('file-input');
 const output = document.getElementById('output');
 const form = document.getElementById('upload-form');
-let selectedFile = null; // <-- track the selected or dropped file
+const warningDiv = document.getElementById('feedback-resp');
+let selectedFile = null;
 
-// Allow clicking the drop zone to open file picker
+// Click-to-open file picker
 dropZone.addEventListener('click', () => fileInput.click());
 
-// Handle drag-over visuals
+// Drag-over effects
 dropZone.addEventListener('dragover', (e) => {
   e.preventDefault();
   dropZone.classList.add('dragover');
 });
-
 dropZone.addEventListener('dragleave', () => {
   dropZone.classList.remove('dragover');
 });
-
-// Handle file drop
 dropZone.addEventListener('drop', (e) => {
   e.preventDefault();
   dropZone.classList.remove('dragover');
-
   const file = e.dataTransfer.files[0];
   if (file) {
     selectedFile = file;
-    fileInput.files = e.dataTransfer.files; // sync input element
+    fileInput.files = e.dataTransfer.files;
     console.log("File dropped:", file.name);
   }
 });
-
-// Handle file selection via Browse button
 fileInput.addEventListener('change', (e) => {
   const file = e.target.files[0];
   if (file) {
@@ -40,27 +35,23 @@ fileInput.addEventListener('change', (e) => {
   }
 });
 
-// Submit handler - sends file + dropdown value
-document.getElementById('submit').addEventListener('submit', async (event) => {
+// ✅ Handle form submission
+form.addEventListener('submit', async (event) => {
+  event.preventDefault(); // prevent default form reload
+
   const queryType = document.getElementById('query-type').value;
-  const warningDiv = document.getElementById('feedback-resp');
-  const selectedValue = queryType.value;
+  warningDiv.textContent = ""; // clear old message
 
-  warningDiv.textContent = "";
-
-  if (!selectedValue) {
-    e.preventDefault();
-    warningDiv.textContent = "Please select an option before submitting.";
+  if (!queryType) {
+    warningDiv.textContent = "⚠️ Please select a query type.";
     return;
   }
 
   if (!selectedFile) {
-    e.preventDefault();
-    warningDiv.textContent = "Please select or drag a PDF file.";
+    warningDiv.textContent = "⚠️ Please select or drag a PDF file.";
     return;
   }
 
-  else {
   const formData = new FormData();
   formData.append("file", selectedFile);
   formData.append("query_type", queryType);
@@ -81,4 +72,4 @@ document.getElementById('submit').addEventListener('submit', async (event) => {
     console.error("Upload error:", err.message);
     output.textContent = "Upload failed.";
   }
-}});
+});
