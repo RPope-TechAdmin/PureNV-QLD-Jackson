@@ -46,6 +46,12 @@ form.addEventListener('submit', async (event) => {
 
   const queryType = document.getElementById('query-type').value;
 
+  if (queryType) {
+    queryType="blank";
+    alert("Please select a lab data type before continuing");
+    return;
+  }
+
   if (!selectedFile) {
     alert("Please select or drag a PDF file.");
     return;
