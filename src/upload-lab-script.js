@@ -41,16 +41,13 @@ fileInput.addEventListener('change', (e) => {
 });
 
 // Submit handler - sends file + dropdown value
-form.addEventListener('submit', async (event) => {
-  event.preventDefault();
-
+document.getElementById('submit').addEventListener('submit', async (event) => {
   const queryType = document.getElementById('query-type').value;
   const selectedValue = queryType.value;
 
-  if (selectedValue === "") {
+  if (!selectedValue) {
     alert("Please select an option before submitting.");
-    // Optionally prevent further action (e.g., form submission)
-    e.preventDefault();
+    return;
   }
 
   if (!selectedFile) {
