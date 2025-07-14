@@ -43,15 +43,20 @@ fileInput.addEventListener('change', (e) => {
 // Submit handler - sends file + dropdown value
 document.getElementById('submit').addEventListener('submit', async (event) => {
   const queryType = document.getElementById('query-type').value;
+  const warningDiv = document.getElementById('feedback-resp');
   const selectedValue = queryType.value;
 
+  warningDiv.textContent = "";
+
   if (!selectedValue) {
-    alert("Please select an option before submitting.");
+    e.preventDefault();
+    warningDiv.textContent = "Please select an option before submitting.";
     return;
   }
 
   if (!selectedFile) {
-    alert("Please select or drag a PDF file.");
+    e.preventDefault();
+    warningDiv.textContent = "Please select or drag a PDF file.";
     return;
   }
 
