@@ -41,15 +41,14 @@ fileInput.addEventListener('change', (e) => {
 });
 
 // Submit handler - sends file + dropdown value
-form.addEventListener('submit', async (event) => {
-  event.preventDefault();
+document.getElementById('submit').addEventListener('click', async function (e) {
+  const queryType = document.getElementById('query_type');
+  const selectedValue = queryType.value;
 
-  const queryType = document.getElementById('query-type').value;
-
-  if (queryType) {
-    queryType="blank";
-    alert("Please select a lab data type before continuing");
-    return;
+  if (selectedValue === "") {
+    alert("Please select an option before submitting.");
+    // Optionally prevent further action (e.g., form submission)
+    e.preventDefault();
   }
 
   if (!selectedFile) {
