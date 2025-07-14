@@ -40,7 +40,6 @@ form.addEventListener('submit', async (event) => {
   event.preventDefault(); // prevent default form reload
 
   const queryType = document.getElementById('query-type').value;
-  warningDiv.textContent = ""; // clear old message
 
   if (!queryType) {
     warningDiv.textContent = "⚠️ Please select a query type.";
