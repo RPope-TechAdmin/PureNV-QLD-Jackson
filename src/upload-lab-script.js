@@ -60,6 +60,7 @@ document.getElementById('submit').addEventListener('submit', async (event) => {
     return;
   }
 
+  else {
   const formData = new FormData();
   formData.append("file", selectedFile);
   formData.append("query_type", queryType);
@@ -80,4 +81,4 @@ document.getElementById('submit').addEventListener('submit', async (event) => {
     console.error("Upload error:", err.message);
     output.textContent = "Upload failed.";
   }
-});
+}});
