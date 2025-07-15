@@ -6,6 +6,12 @@ const form = document.getElementById('upload-form');
 const warningDiv = document.getElementById('feedback-resp');
 let selectedFile = null;
 
+if (!warningDiv) {
+  console.error("Element with ID 'feedback-resp' not found in the DOM!");
+  return;
+}
+
+
 // Click-to-open file picker
 dropZone.addEventListener('click', () => fileInput.click());
 
