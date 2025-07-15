@@ -49,12 +49,12 @@ form.addEventListener('submit', async (event) => {
   warningDiv.textContent = ""; // clear old message
 
   if (!queryType) {
-    warningDiv.textContent = "⚠️ Please select a query type.";
+    warningDiv.textContent = "Please select a query type.";
     return;
   }
 
   if (!selectedFile) {
-    warningDiv.textContent = "⚠️ Please select or drag a PDF file.";
+    warningDiv.textContent = "Please select or drag a PDF file.";
     return;
   }
 
