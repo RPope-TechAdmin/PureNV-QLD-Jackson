@@ -6,12 +6,6 @@ const form = document.getElementById('upload-form');
 const warningDiv = document.getElementById('feedback-resp');
 let selectedFile = null;
 
-if (!warningDiv) {
-  console.error("Element with ID 'feedback-resp' not found in the DOM!");
-  return;
-}
-
-
 // Click-to-open file picker
 dropZone.addEventListener('click', () => fileInput.click());
 
@@ -44,17 +38,22 @@ fileInput.addEventListener('change', (e) => {
 // ✅ Handle form submission
 form.addEventListener('submit', async (event) => {
   event.preventDefault(); // prevent default form reload
+  
+  if (!warningDiv) {
+    console.error("Element with ID 'feedback-resp' not found in the DOM!");
+    return;
+  }
 
   const queryType = document.getElementById('query-type').value;
   warningDiv.textContent = ""; // clear old message
 
   if (!queryType) {
-    warningDiv.textContent = "Please select a query type.";
+    warningDiv.textContent = "⚠️ Please select a query type.";
     return;
   }
 
   if (!selectedFile) {
-    warningDiv.textContent = "Please select or drag a PDF file.";
+    warningDiv.textContent = "⚠️ Please select or drag a PDF file.";
     return;
   }
 
