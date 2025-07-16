@@ -71,10 +71,22 @@ form.addEventListener('submit', async (event) => {
     });
 
     const text = await response.text();
-    const data = JSON.parse(text);
-    output.textContent = JSON.stringify(data, null, 2);
-  } catch (err) {
-    console.error("Upload error:", err.message);
-    output.textContent = "Upload failed.";
+  let data;
+
+  try {
+    data = text ? JSON.parse(text) : {};
+  } catch (jsonErr) {
+    console.error("❌ JSON parse error:", jsonErr.message);
+    data = { error: "Invalid JSON response", raw: text };
   }
-});
+
+  if (!response.ok) {
+    console.error("🚨 Server error:", data);
+    output.textContent = `Upload failed: ${data?.error || "Unknown error"}`;
+  } else {
+    output.textContent = JSON.stringify(data, null, 2);
+  }
+} catch (err) {
+  console.error("🚨 Upload error:", err.message);
+  output.textContent = "Upload failed. Network or server error.";
+}})
