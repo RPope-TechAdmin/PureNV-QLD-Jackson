@@ -84,7 +84,7 @@ form.addEventListener('submit', async (event) => {
     console.error("🚨 Server error:", data);
     output.textContent = `Upload failed: ${data?.error || "Unknown error"}`;
   } else {
-    output.textContent = JSON.stringify(data, null, 2);
+    warningDiv.textContent = "Data uploaded successfully, Thank you!";
   }
 } catch (err) {
   console.error("🚨 Upload error:", err.message);
