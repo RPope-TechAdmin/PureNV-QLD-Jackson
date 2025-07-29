@@ -18,7 +18,7 @@
                         <a href="#">☰</a>
                         <ul class="dropdown-menu">
                             <li><a href="Index.html">Home</a></li>
-                            <li><a href="Lab-Data.html">Laboratory Testing Data</a></li>
+                            <li><a href="Lab_Data.html">Laboratory Testing Data</a></li>
                             <li><a href="Upload-Lab.html">Upload Lab Data</a></li>
                             <li><a href="Report-Download.html">Download Reportable Data</a></li>
                             <li><a href="Information.html">Information</a></li>
@@ -42,10 +42,12 @@
                     <option value="DS-INT">Dust Suppression - Internal</option>
                     <option value="DS-EXT">Dust Suppression - External</option>
                 </select>
-                <input class="uploader" type="file" id="file-input" accept=".pdf" />
                 <button id="submit" type="submit" class="submit-lab">Submit</button>
             </form>
-            <div class="drop-area" id="drop-zone">Drop your excel file here, or click to search for it.</div>
+            <div class="drop-area" id="drop-zone">
+                <input class="uploader" type="file" id="file-input" accept=".pdf" />
+                <span id="drop-area-text">Drop your pdf file here, or click to search for it.</span>
+            </div>
             <pre class="output" id="output"></pre>
             <div id="feedback-resp" class="feedback-resp"></div>
             <script src="upload-lab-script.js"></script>

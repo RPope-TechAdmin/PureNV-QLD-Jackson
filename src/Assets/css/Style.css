@@ -81,6 +81,7 @@ html,body{
 .dropdown-menu {
     display: none;
     position:absolute;
+    text-align: left;
     list-style-type: disc;
     background-color: #bebebe;
     color:#1b96c8;
@@ -121,14 +122,14 @@ html,body{
 
 .intro-title{
     color:#1b96c8;
-    font-size:35px;
+    font-size:3.5vh;
     font-weight:600px;
     text-align:center;
 }
 
 .intro{
     color:#1b96c8;
-    font-size:20px;
+    font-size:2.5vh;
     text-align:center;
 }
 
@@ -149,12 +150,12 @@ html,body{
     left:0;
     background-color:#3d3d3d;
     width:100%;
-    height:8vh;
+    height:10vh;
     padding-left:2%;
     }
 
 .foot-text{
-    font-size:20px;
+    font-size:2vh;
     font-weight:600;
 }
 
@@ -162,7 +163,7 @@ html,body{
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.9vh;
     color:#1b96c8;
 }
 
@@ -170,11 +171,11 @@ html,body{
     display:block;
     justify-content: space-between;
     border: 3px dashed #888;
-    padding:1px,3px;
+    padding:1vh 1vh;
     text-align: left;
     width:45%;
     color:#1b96c8;
-    font-size:16px;
+    font-size:1.8vh;
     width:45%;
     position:absolute;
     left:2.5%;
@@ -184,17 +185,17 @@ html,body{
     display:block;
     justify-content: space-between;
     border: 3px dashed #888;
-    padding:1px,3px;
+    padding:1vh 1vh;
     text-align: left;
     color:#1b96c8;
-    font-size:16px;
+    font-size:1.8vh;
     width:45%;
     position:absolute;
     right:2.5%;
 }
 
 .cont-lk{
-    font-size:20px;
+    font-size:1.9vh;
     font-weight:700;
     color:#1b96c8;
     text-decoration: underline;
@@ -206,14 +207,14 @@ html,body{
 }
 
 .Hey-You{
-    font-size:40px;
+    font-size:3.5vh;
     color:#1b96c8;
     text-decoration: underline;
     text-align: center;
 }
 
 .Not-Allowed{
-    font-size:25px;
+    font-size:2.5vh;
     font-weight:550;
     text-align: center;
     text-decoration: none;
@@ -234,14 +235,14 @@ html,body{
 }
 
 .contact-big{
-    font-size:20;
+    font-size:4vh;
     font-weight: 600;
     color:#1b96c8;
     text-align: center;
 }
 
 .contact-small{
-    font-size:14;
+    font-size:2vh;
     font-weight:450;
     color:#1b96c8;
     text-align:center;
@@ -253,14 +254,14 @@ html,body{
     align-self: center;
     left:30%;
     top:30%;
-    font-size: 75px;
+    font-size: 7vh;
 }
 
 .small-404{
     display:block;
     position:absolute;
     align-self: center;
-    font-size:25px;
+    font-size:2vh;
     left:15%;
     top:50%;
 }
@@ -277,7 +278,7 @@ html,body{
 
     .name-label{
         color:#1b96c8;
-        font-size:14px;
+        font-size:1.4vh;
         font-weight:450;
         position:absolute;
         left:40%;
@@ -287,7 +288,7 @@ html,body{
     .name-box{
         background-color:#f5f8fa;
         color:black;
-        font-size:14px;
+        font-size:1.4vh;
         font-weight:450;
         position:absolute;
         left:40%;
@@ -298,7 +299,7 @@ html,body{
 
     .feedback-label{
         color:#1b96c8;
-        font-size:14px;
+        font-size:1.4vh;
         font-weight:450;
         position:absolute;
         top:5vh;
@@ -308,7 +309,7 @@ html,body{
     .feedback-box{
         background-color:#f5f8fa;
         color:black;
-        font-size:14px;
+        font-size:1.4vh;
         font-weight:450;
         position:absolute;
         left:40%;
@@ -320,7 +321,7 @@ html,body{
     .submit-button{
         background-color:#1b96c8;
         color:#ffffff;
-        font-size:14px;
+        font-size:1.4vh;
         font-weight:500;
         position:absolute;
         top:18vh;
@@ -339,14 +340,10 @@ html,body{
 }
 
 .upload-text {
-    position:absolute;
-    left:20%;
+    text-align: center;
 }
 
 .drop-area {
-    position:absolute;
-    left:32.5%;
-    top:12.5%;
     width:100%;
     max-width: 500px;
     margin: 75px auto;
@@ -355,12 +352,18 @@ html,body{
     text-align: center;
     font-family: sans-serif;
     color: #555;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .drop-area.dragover {
     background-color: #e0ffe0;
     border-color: #00aa00;
+}
+
+.drop-area:hover {
+    background-color:#e0ffe0;
+    border-color:#00aa00;
+    cursor: pointer;
 }
 
 .output {
@@ -370,9 +373,7 @@ html,body{
 }
 
 .uploader {
-    position:absolute;
-    left:34%;
-    top:850%;
+    display:none;
 }
 
 .look-out-for {
@@ -382,13 +383,11 @@ html,body{
     position:absolute;
     top:45%;
     left:6.5%;
-    font-size: 18px;
+    font-size: 1.8vh;
 }
 
 .dropdown {
-    position:absolute;
-    left:34.5%;
-    top:15%;
+    text-align: center;
 }
 
 .submit-lab {
@@ -399,5 +398,123 @@ html,body{
     width:162.5px;
     background-color: #1b96c8;
     color:#ffffff;
-    font-size:22px;
+    font-size:2vh;
+}
+
+.liquid-head {
+    position:absolute;
+    display: flex;
+    left:1%;
+    top:20%;
+    color:#1b96c8;
+    font-size:2.75vh;
+}
+
+.liquid-options {
+    display:block;
+    justify-content: space-between;
+    text-align: left;
+    width:45%;
+    color:#1b96c8;
+    font-size:2vh;
+    width:45%;
+    position:absolute;
+    top:27.5%;
+    left:2.5%;
+}
+    .liquid-options li {
+        position:relative;
+        margin-left:20px;
+    }
+
+    .liquid-options > li > a{
+        display: block;
+        right:1%;
+        color:#1b96c8;
+        text-decoration: none;
+        font-size: 2vh;
+        text-wrap-mode:nowrap;
+        font-weight:500;
+        transition: color 0.3s;
+    }
+
+    .liquid-options > li > a:hover{
+        color:#1b97c88c;
+    }
+
+    .tooltip {
+        position:relative;
+        display:inline-block;
+    }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            font-size: 1.25vh;
+            text-wrap-mode:nowrap;
+            width:fit-content;
+            background-color:#888;
+            color:#ffffff;
+            text-align:center;
+            padding:5px 5px;
+            border-radius:6px;
+            position:absolute;
+            margin:0 1%;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+.test-format {
+    color:#1b96c8;
+    text-decoration: none;
+    font-size:2vh;
+}
+
+.solid-head {
+    position:absolute;
+    display: flex;
+    right:45%;
+    top:20%;
+    color:#1b96c8;
+    font-size:2.75vh;
+}
+
+.solid-options {
+    display:block;
+    justify-content: space-between;
+    text-align: left;
+    width:45%;
+    color:#1b96c8;
+    font-size:2vh;
+    width:45%;
+    position:absolute;
+    top:27.5%;
+    right:5%;
+}
+    .solid-options li {
+        position:relative;
+        margin-left:20px;
+    }
+
+    .solid-options > li > a{
+        display: block;
+        right:1%;
+        color:#1b96c8;
+        text-decoration: none;
+        font-size: 2vh;
+        text-wrap-mode:nowrap;
+        font-weight:500;
+        transition: color 0.3s;
+    }
+
+    .solid-options > li > a:hover{
+        color:#1b97c88c;
+    }
+
+.bottom-text {
+    text-align:center;
+    font-size: 2.5vh;
+    position:absolute;
+    bottom: 2vh;
+    left:15%;
 }

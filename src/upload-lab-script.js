@@ -4,6 +4,7 @@ const fileInput = document.getElementById('file-input');
 const output = document.getElementById('output');
 const form = document.getElementById('upload-form');
 const warningDiv = document.getElementById('feedback-resp');
+const dropZoneText = document.getElementById('drop-area-text');
 let selectedFile = null;
 
 // Click-to-open file picker
@@ -24,14 +25,14 @@ dropZone.addEventListener('drop', (e) => {
   if (file) {
     selectedFile = file;
     fileInput.files = e.dataTransfer.files;
-    console.log("File dropped:", file.name);
+    dropZoneText.textContent = `Selected File: ${file.name}`;
   }
 });
 fileInput.addEventListener('change', (e) => {
   const file = e.target.files[0];
   if (file) {
     selectedFile = file;
-    console.log("File selected via Browse:", file.name);
+    dropZoneText.textContent = `Selected File: ${file.name}`;
   }
 });
 
