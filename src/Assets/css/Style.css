@@ -752,9 +752,9 @@ select{
 .dropdown-dsdams{
     border-right:3px solid #555;
     width:30%;
-    padding:5% 10% 25%;
+    padding:0 10% 25%;
     position:absolute;
-    top:15%;
+    top:43%;
     z-index: 2;
 }
 
@@ -787,7 +787,7 @@ select{
 .dsdownbutton{
     position:absolute;
     left:17.5%;
-    top:17.5%;
+    top:22.5%;
     width:15%;
     height:5%;
     background-color: #1b96c8;
@@ -802,7 +802,7 @@ select{
     padding:1% 24.5% 1% 1%;
     background-color:#eee;
     left:9.5%;
-    top:45%;
+    top:32.5%;
     font-weight:600;
     z-index: 1;
 }
@@ -813,7 +813,7 @@ select{
     padding:0.25%;
     background-color:#ffffff;
     left:16%;
-    top:45.5%;
+    top:33%;
     font-weight:500;
     border:2px solid #888;
     z-index: 1;
@@ -824,7 +824,7 @@ select{
     margin:10px;
     padding:1% 25% 1% 1%;
     left:25%;
-    top:45%;
+    top:32.5%;
     font-weight:600;
     z-index: 1;
 }
@@ -835,7 +835,7 @@ select{
     padding:0.25%;
     background-color:#ffffff;
     left:31%;
-    top:45.5%;
+    top:33%;
     font-weight:500;
     border:2px solid #888;
     z-index: 1;
