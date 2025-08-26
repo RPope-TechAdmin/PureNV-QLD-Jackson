@@ -12,7 +12,7 @@ document.getElementById("getValues").addEventListener("click", () => {
   const startDate = document.getElementById("startDate").value;
   const endDate = document.getElementById("endDate").value;
 
-  fetch("/download-excel", {
+  fetch("https://jackson-backend-jackson-e0bycnfwgrhzana9.australiaeast-01.azurewebsites.net/api/lab-data-download", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ selections, startDate, endDate })
