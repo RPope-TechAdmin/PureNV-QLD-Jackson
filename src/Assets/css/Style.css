@@ -393,8 +393,9 @@ html,body{
 .dropdown {
     position:absolute;
     top:32.5%;
-    right:12.5%;
+    right:13%;
     text-align: auto;
+    z-index:3;
 }
 
 .dropdown label{
@@ -402,6 +403,7 @@ html,body{
     position:relative;
     right:17.5%;
     font-weight:500;
+    color:#f5f8fa;
 }
 
 .submit-lab {
@@ -861,4 +863,9 @@ select{
     height:100%;
     z-index:1;
     border-top: 2px solid #555;
+}
+
+.testdroplabel{
+    position:absolute;
+    top:20%;
 }
