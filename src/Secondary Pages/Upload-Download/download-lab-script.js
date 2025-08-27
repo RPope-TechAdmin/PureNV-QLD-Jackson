@@ -1,13 +1,18 @@
 document.getElementById("getValues").addEventListener("click", () => {
-  const selections = [];
+    const selected = {};
 
-  document.querySelectorAll(".options").forEach(group => {
-    const tableName = group.getAttribute("data-table"); // 👈 find DB table
-    group.querySelectorAll("input[type='checkbox']:checked:not(.group-select)")
-      .forEach(cb => {
-        selections.push({ table: tableName, analyte: cb.value });
-      });
-  });
+    document.querySelectorAll(".options").forEach(optionGroup => {
+        const groupId = optionGroup.id;
+        const checkboxes = optionGroup.querySelectorAll("input[type='checkbox']:checked:not(.group-select)");
+
+        if (checkboxes.length > 0) {
+            selected[groupId] = [];
+            checkboxes.forEach(cb => selected[groupId].push(cb.value));
+        }
+    });
+
+    // send this to backend with dates
+    console.log("Selected by group:", selected);
 
   const startDate = document.getElementById("startDate").value;
   const endDate = document.getElementById("endDate").value;
