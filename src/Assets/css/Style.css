@@ -872,3 +872,11 @@ select{
     position:absolute;
     top:20%;
 }
+
+.upload-response{
+    position:absolute;
+    top:85%;
+    Right:17.5%;
+    font-weight:500;
+
+}
