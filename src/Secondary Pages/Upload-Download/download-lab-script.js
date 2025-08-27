@@ -33,7 +33,7 @@ document.getElementById("getValues").addEventListener("click", () => {
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `${startDate} - ${endDate}`.xlsx;
+    a.download ="Requested Results.xlsx";
     a.click();
   })
   .catch(err => alert(err.message));
