@@ -795,6 +795,7 @@ select{
     color:#ffffff;
     font-weight: 500;
     font-size:2vh;
+    z-index:3;
 }
 
 .startd{
