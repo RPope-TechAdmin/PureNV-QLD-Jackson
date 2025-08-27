@@ -347,7 +347,7 @@ html,body{
 .drop-area {
     position:absolute;
     right:10%;
-    top:22.5%;
+    top:41%;
     width:50%;
     max-width: 500px;
     margin:10px;
@@ -392,7 +392,7 @@ html,body{
 
 .dropdown {
     position:absolute;
-    top:15%;
+    top:32.5%;
     right:12.5%;
     text-align: auto;
 }
@@ -750,12 +750,11 @@ select{
 }
 
 .dropdown-dsdams{
-    border-right:3px solid #555;
     width:30%;
     padding:0 10% 25%;
     position:absolute;
-    top:43%;
-    z-index: 2;
+    top:33.5%;
+    z-index: 3;
 }
 
 .group{
@@ -777,7 +776,7 @@ select{
     max-height:40vh;
     width:inherit;
     overflow-y:auto;
-    z-index:2;
+    z-index:3;
 }
 
 .options label {
@@ -787,7 +786,7 @@ select{
 .dsdownbutton{
     position:absolute;
     left:17.5%;
-    top:22.5%;
+    top:29.5%;
     width:15%;
     height:5%;
     background-color: #1b96c8;
@@ -802,9 +801,9 @@ select{
     padding:1% 24.5% 1% 1%;
     background-color:#eee;
     left:9.5%;
-    top:32.5%;
+    top:39.5%;
     font-weight:600;
-    z-index: 1;
+    z-index: 2;
 }
 
 .startinput{
@@ -813,10 +812,10 @@ select{
     padding:0.25%;
     background-color:#ffffff;
     left:16%;
-    top:33%;
+    top:40%;
     font-weight:500;
     border:2px solid #888;
-    z-index: 1;
+    z-index: 2;
 }
 
 .endd{
@@ -824,9 +823,9 @@ select{
     margin:10px;
     padding:1% 25% 1% 1%;
     left:25%;
-    top:32.5%;
+    top:39.9%;
     font-weight:600;
-    z-index: 1;
+    z-index: 2;
 }
 
 .endinput{
@@ -835,8 +834,31 @@ select{
     padding:0.25%;
     background-color:#ffffff;
     left:31%;
-    top:33%;
+    top:40%;
     font-weight:500;
     border:2px solid #888;
-    z-index: 1;
+    z-index: 2;
+}
+
+.download-head{
+    position:absolute;
+    left:21%;
+    top:17.5%;
+    font-size:2.5vh;
+}
+
+.upload-head{
+    position:absolute;
+    right:23.5%;
+    top:17.5%;
+    font-size:2.5vh;
+}
+
+.updown-container{
+    position:absolute;
+    top:16%;
+    width:100%;
+    height:100%;
+    z-index:1;
+    border-top: 2px solid #555;
 }
