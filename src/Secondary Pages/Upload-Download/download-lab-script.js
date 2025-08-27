@@ -1,18 +1,19 @@
 document.getElementById("getValues").addEventListener("click", () => {
-    const selected = {};
+    const selections = {};
 
     document.querySelectorAll(".options").forEach(optionGroup => {
         const groupId = optionGroup.id;
         const checkboxes = optionGroup.querySelectorAll("input[type='checkbox']:checked:not(.group-select)");
 
         if (checkboxes.length > 0) {
-            selected[groupId] = [];
-            checkboxes.forEach(cb => selected[groupId].push(cb.value));
+            selections[groupId] = [];
+            checkboxes.forEach(cb => selections[groupId].push(cb.value));
         }
     });
 
     // send this to backend with dates
-    console.log("Selected by group:", selected);
+    console.log("Selected by group:", selections);
+
 
   const startDate = document.getElementById("startDate").value;
   const endDate = document.getElementById("endDate").value;
