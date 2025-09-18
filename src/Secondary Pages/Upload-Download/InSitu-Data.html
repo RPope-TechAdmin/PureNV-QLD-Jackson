@@ -15,7 +15,7 @@
             <div class="logo">
                 <img src="../../Assets/images/Pure-_-Dark-Blue.png" alt="Pure Environmental Pty Ltd"/>
 			</div>
-            <h1 class="title">Laboratory Data</h1>
+            <h1 class="title">In-Situ Monitoring Data</h1>
 			<!-- Nav -->
 			<nav class="nav">
 				<ul class="navlist">
@@ -36,9 +36,109 @@
         </div>
         <div class="main">
             <div class="decal">
-                <img src="Assets/images/Horizontal_Decal.png" alt="PureNV-Decal"/>
+                <img src="../../Assets/images/Horizontal_Decal.png" alt="PureNV-Decal"/>
             </div>
-            <iframe title="Jackson In-Situ Data" width="100%" height="680vh" src="https://app.powerbi.com/reportEmbed?reportId=38c03580-f69f-4d7b-8052-a0dd92823f5e&autoAuth=true&ctid=655e497b-f0e8-44ed-98fb-77680dd02944" frameborder="0" allowFullScreen="true"></iframe>
+            <H3 class="download-title">From here, you can choose to upload lab data throught the drag & drop box below, or use the analyte selector below that to choose what data you wish to download.</H3>
+            <h3 class="download-head">Download Data</h3>
+            <h3 class="upload-head"> Upload Data</h3>
+            <div class="updown-container">
+                <div class="dropdown-dsdams">
+                    <!-- External Analytes -->
+                    <div class="group">
+                    <div class="group-header" data-group="external"> Physical Properties (click to expand)</div>
+                    <div class="options" id="external" data-table="[PhysicalInSitu]">
+                        <label><input type="checkbox" class="group-select" data-group="external"> Select All </label>
+                        <label><input type="checkbox" value="House Dam pH"> House Dam pH </label>
+                        <label><input type="checkbox" value="House Dam TDS"> House Dam TDS </label>
+                        <label><input type="checkbox" value="House Creek pH"> House Creek pH </label>
+                        <label><input type="checkbox" value="House Creek TDS"> House Creek TDS </label>
+                        <label><input type="checkbox" value="Seppanin pH"> Seppanin pH </label>
+                        <label><input type="checkbox" value="Seppanin TDS"> Seppanin TDS </label>
+                        <label><input type="checkbox" value="Quarry pH"> Quarry pH </label>
+                        <label><input type="checkbox" value="Quarry TDS"> Quarry TDS </label>
+                        <label><input type="checkbox" value="SOLAFFF 1 pH"> SOLAFFF 1 pH </label>
+                        <label><input type="checkbox" value="SOLAFFF 1 TDS"> SOLAFFF 1 TDS </label>
+                        <label><input type="checkbox" value="SOLAFFF 2 pH"> SOLAFFF 2 pH </label>
+                        <label><input type="checkbox" value="SOLAFFF 2 TDS"> SOLAFFF 2 TDS </label>
+                        <label><input type="checkbox" value="SOLAFFF 3 pH"> SOLAFFF 3 pH </label>
+                        <label><input type="checkbox" value="SOLAFFF 3 TDS"> SOLAFFF 3 TDS </label>
+                        <label><input type="checkbox" value="SOLAFFF 4 pH"> SOLAFFF 4 pH </label>
+                        <label><input type="checkbox" value="SOLAFFF 4 TDS"> SOLAFFF 4 TDS </label>
+                        <label><input type="checkbox" value="SOLAFFF 5 pH"> SOLAFFF 5 pH </label>
+                        <label><input type="checkbox" value="SOLAFFF 5 TDS"> SOLAFFF 5 TDS </label>
+                        <label><input type="checkbox" value="SOLAFFF 6 pH"> SOLAFFF 6 pH </label>
+                        <label><input type="checkbox" value="SOLAFFF 6 TDS"> SOLAFFF 6 TDS </label>
+                    </div>
+                    </div>
+
+                    <!-- PFAS TOPA -->
+                    <div class="group">
+                    <div class="group-header" data-group="pfastopa">PFAS & PFHxS (click to expand)</div>
+                    <div class="options" id="pfastopa" data-table="[PFASInSitu]">
+                        <label><input type="checkbox" class="group-select" data-group="pfastopa"> Select All </label>
+                        <label><input type="checkbox" value="Dam 6 PFHxS"> Dam 6 PFHxS </label>
+                        <label><input type="checkbox" value="Dam 6 PFAS"> Dam 6 PFAS </label>
+                        <label><input type="checkbox" value="Dam 7 PFHxS"> Dam 7 PFHxS </label>
+                        <label><input type="checkbox" value="Dam 7 PFAS"> Dam 7 PFAS </label>
+                        <label><input type="checkbox" value="Sedimentation Pond PFHxS"> Sedimentation Pond PFHxS </label>
+                        <label><input type="checkbox" value="Sedimentation Pond PFAS"> Sedimentation Pond PFAS </label>
+                        <label><input type="checkbox" value="House Creek PFHxS"> House Creek PFHxS </label>
+                        <label><input type="checkbox" value="House Creek PFAS"> House Creek PFAS </label>
+                        <label><input type="checkbox" value="House Dam PFHxS"> House Dam PFHxS </label>
+                        <label><input type="checkbox" value="House Dam PFAS"> House Dam PFAS </label>
+                        <label><input type="checkbox" value="Seppanin PFHxS"> Seppanin PFHxS </label>
+                        <label><input type="checkbox" value="Seppanin PFAS"> Seppanin PFAS </label>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+            </div>
+
+            <label class="startd" for="startd">Start Date:</label>
+            <input id="startDate" class="startinput" type="date" id="startd">
+            <label class="endd" for="endd">End Date:</label>
+            <input id="endDate" class="endinput" type="date" id="endd">
+            
+            <button class="dsdownbutton" id="getValues">Get Selected Analytes</button>
+            <script src="download-lab-script.js"></script>
+            <script>
+                 // Expand/collapse groups
+                document.querySelectorAll(".group-header").forEach(header => {
+                header.addEventListener("click", () => {
+                    const groupId = header.getAttribute("data-group");
+                    const optionsDiv = document.getElementById(groupId);
+                    optionsDiv.style.display = optionsDiv.style.display === "block" ? "none" : "block";
+                });
+                });
+
+                // Select all functionality
+                document.querySelectorAll(".group-select").forEach(selectAll => {
+                selectAll.addEventListener("change", function () {
+                    const groupId = this.getAttribute("data-group");
+                    const checkboxes = document.querySelectorAll(`#${groupId} input[type='checkbox']:not(.group-select)`);
+                    checkboxes.forEach(cb => cb.checked = this.checked);
+                });
+                });
+            </script>
+            <p class="dsdatadownoutput" id="output"></p>
+                <form id="upload-form" class="dropdown">
+                <label for="query-type">Select from the following laboratory data types:</label>
+                <select id="query-type" name="query-type">
+                    <option value="">Please select from the following:</option>
+                    <option value="SWPFAS">Stormwater - PFAS</option>
+                    <option value="SWInt">Stormwater - Internal</option>
+                    <option value="SWAll">Stormwater - External</option>
+                </select>
+                <button id="submit" type="submit" class="submit-lab">Submit</button>
+            </form>
+            <div class="drop-area" id="drop-zone">
+                <input class="uploader" type="file" id="file-input" accept=".pdf" />
+                <span id="drop-area-text">Drop your pdf file here, or click to search for it.</span>
+            </div>
+            <pre class="output" id="output"></pre>
+            <div id="feedback-resp" class="upload-response"></div>
+            <script src="upload-lab-script.js"></script>
+
         </div>
         <footer class="footer">
             <p class="footertext">Got a recommendation or a problem that needs solving? Contact us <a class="cont-lk" onclick="href='Contact.html'">here!</a></p>

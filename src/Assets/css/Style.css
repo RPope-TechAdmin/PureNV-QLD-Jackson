@@ -777,7 +777,7 @@ select{
     margin-left:2%;
     background-color:#888;
     color:#ffffff;
-    max-height:40vh;
+    max-height:30vh;
     width:inherit;
     overflow-y:auto;
     z-index:3;
@@ -790,7 +790,7 @@ select{
 .dsdownbutton{
     position:absolute;
     left:17.5%;
-    top:29.5%;
+    top:32.5%;
     width:15%;
     height:5%;
     background-color: #1b96c8;
