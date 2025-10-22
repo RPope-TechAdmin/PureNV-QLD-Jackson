@@ -558,7 +558,8 @@ html,body{
     color:#1b96c8;
     font-size:1.8vh;
     position:absolute;
-    left:22.5%;
+    top:24vh;
+    left:78%;
  }
 
 .storm-suite{
@@ -570,7 +571,8 @@ html,body{
     color:#1b96c8;
     font-size:1.8vh;
     position:absolute;
-    left:40%;
+    top:24vh;
+    left:22.5%;
  }
 
 .dml-suite{
@@ -582,7 +584,8 @@ html,body{
     color:#1b96c8;
     font-size:1.8vh;
     position:absolute;
-    left:58%;
+    top:24vh;
+    left:40%;
  }
 
 .irrigation-suite{
@@ -594,7 +597,8 @@ html,body{
     color:#1b96c8;
     font-size:1.8vh;
     position:absolute;
-    left:78%;
+    top:24vh;
+    left:58%;
  }
 
  .down-title{
@@ -612,6 +616,25 @@ html,body{
     left:1%;
  }
 
+  .quote-down{
+    display:block;
+    justify-content: space-between;
+    padding:1vh 1vh;
+    text-align: left;
+    width:fit-content;
+    color:#1b96c8;
+    font-size:1.8vh;
+    text-decoration: underline;
+    position:absolute;
+    top: 65%;
+    left:2%;
+    transition-duration: 0.3s;
+ }
+
+.quote-down:hover{
+    color:blue;
+ }
+
  .ds-down{
     display:block;
     justify-content: space-between;
@@ -620,9 +643,9 @@ html,body{
     width:fit-content;
     color:#1b96c8;
     font-size:1.8vh;
-    text-decoration: none;
+    text-decoration: underline;
     position:absolute;
-    top: 65%;
+    top: 70%;
     left:2%;
     transition-duration: 0.3s;
  }
@@ -639,10 +662,10 @@ html,body{
     width:fit-content;
     color:#1b96c8;
     font-size:1.8vh;
-    text-decoration: none;
+    text-decoration: underline;
     position:absolute;
-    top: 65%;
-    left:24%;
+    top: 70%;
+    left:79%;
     transition-duration: 0.3s;
  }
 
@@ -658,10 +681,10 @@ html,body{
     width:fit-content;
     color:#1b96c8;
     font-size:1.8vh;
-    text-decoration: none;
+    text-decoration: underline;
     position:absolute;
-    top: 65%;
-    left:40%;
+    top: 70%;
+    left:24%;
     transition-duration: 0.3s;
  }
 
@@ -677,14 +700,33 @@ html,body{
     width:fit-content;
     color:#1b96c8;
     font-size:1.8vh;
-    text-decoration: none;
+    text-decoration: underline;
     position:absolute;
-    top: 65%;
-    left:60%;
+    top: 70%;
+    left:40%;
     transition-duration: 0.3s;
  }
 
 .dml-down:hover{
+    color:blue;
+ }
+
+.dms-down{
+    display:block;
+    justify-content: space-between;
+    padding:1vh 1vh;
+    text-align: left;
+    width:fit-content;
+    color:#1b96c8;
+    font-size:1.8vh;
+    text-decoration: underline;
+    position:absolute;
+    top: 72.5%;
+    left:40%;
+    transition-duration: 0.3s;
+ }
+
+.dms-down:hover{
     color:blue;
  }
 
@@ -696,14 +738,33 @@ html,body{
     width:fit-content;
     color:#1b96c8;
     font-size:1.8vh;
-    text-decoration: none;
+    text-decoration: underline;
     position:absolute;
-    top: 65%;
-    left:79%;
+    top: 70%;
+    left:60%;
     transition-duration: 0.3s;
  }
 
 .irrigation-down:hover{
+    color:blue;
+ }
+
+.spad-down{
+    display:block;
+    justify-content: space-between;
+    padding:1vh 1vh;
+    text-align: left;
+    width:fit-content;
+    color:#1b96c8;
+    font-size:1.8vh;
+    text-decoration: underline;
+    position:absolute;
+    top: 72.5%;
+    left:60%;
+    transition-duration: 0.3s;
+ }
+
+.spad-down:hover{
     color:blue;
  }
 
