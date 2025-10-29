@@ -1,7 +1,7 @@
 document.getElementById("getValues").addEventListener("click", () => {
     const selections = {};
 
-    document.querySelectorAll(".options").forEach(optionGroup => {
+    document.querySelectorAll(".options1").forEach(optionGroup => {
         const groupId = optionGroup.id;
         const checkboxes = optionGroup.querySelectorAll("input[type='checkbox']:checked:not(.group-select)");
 
@@ -10,6 +10,27 @@ document.getElementById("getValues").addEventListener("click", () => {
             checkboxes.forEach(cb => selections[groupId].push(cb.value));
         }
     });
+
+    document.querySelectorAll(".options2").forEach(optionGroup => {
+        const groupId = optionGroup.id;
+        const checkboxes = optionGroup.querySelectorAll("input[type='checkbox']:checked:not(.group-select)");
+
+        if (checkboxes.length > 0) {
+            selections[groupId] = [];
+            checkboxes.forEach(cb => selections[groupId].push(cb.value));
+        }
+    });
+
+    document.querySelectorAll(".options3").forEach(optionGroup => {
+        const groupId = optionGroup.id;
+        const checkboxes = optionGroup.querySelectorAll("input[type='checkbox']:checked:not(.group-select)");
+
+        if (checkboxes.length > 0) {
+            selections[groupId] = [];
+            checkboxes.forEach(cb => selections[groupId].push(cb.value));
+        }
+    });
+
 
     // send this to backend with dates
     console.log("Selected by group:", selections);
