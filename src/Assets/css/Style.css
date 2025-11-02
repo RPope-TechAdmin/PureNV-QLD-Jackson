@@ -684,11 +684,30 @@ html,body{
     text-decoration: underline;
     position:absolute;
     top: 70%;
-    left:24%;
+    left:22%;
     transition-duration: 0.3s;
  }
 
 .storm-down:hover{
+    color:blue;
+ }
+
+ .creek-down{
+    display:block;
+    justify-content: space-between;
+    padding:1vh 1vh;
+    text-align: left;
+    width:fit-content;
+    color:#1b96c8;
+    font-size:1.8vh;
+    text-decoration: underline;
+    position:absolute;
+    top: 72.5%;
+    left:22%;
+    transition-duration: 0.3s;
+ }
+
+.creek-down:hover{
     color:blue;
  }
 
