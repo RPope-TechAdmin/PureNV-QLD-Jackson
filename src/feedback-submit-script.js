@@ -11,7 +11,7 @@ function showSuccess(message) {
 }
 
 async function sendFeedback(name, feedback) {
-  const res = await fetch("https://jackson-backend-bfg6fagbgdb7e0fg.australiaeast-01.azurewebsites.net/api/feedback", {
+  const res = await fetch("https://jackson-backend-jackson-e0bycnfwgrhzana9.australiaeast-01.azurewebsites.net/api/feedback", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
