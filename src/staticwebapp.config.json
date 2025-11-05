@@ -21,7 +21,7 @@
       "allowedRoles": ["technical","higherup","authenticated","admin_1","operator"]
     },
     {
-      "route": "Upload-Lab.html*",
+      "route": "/Secondary Pages*",
       "allowedRoles": ["technical","higherup","authenticated","admin_1"]
     },
     {
