@@ -35,8 +35,157 @@
         </div>
         <div class="main">
             <div class="decal">
-                <img src="Assets/images/Horizontal_Decal.png" alt="PureNV-Decal"/>
+                <img src="../../Assets/images/Horizontal_Decal.png" alt="PureNV-Decal"/>
             </div>
+            <H3 class="download-title">From here, you can use the analyte selector below that to choose what data you wish to download.</H3>
+            <div class="updown-container">
+                <div class="dropdown-dsdams">
+                    <!-- External Analytes -->
+                    <div class="group">
+                    <div class="group-header1" data-group="cstotal">External Analytes (click to expand)</div>
+                    <div class="options1" id="cstotal" data-table="[Contaminated Soils]">
+                        <label><input type="checkbox" class="group-select" data-group="cstotal"> Select All </label>
+                        <label class="dropcatlab"> Moisture </label>
+                        <label><input type="checkbox" value="Moisture Content"> Moisture Content </label>
+                        <label class="dropcatlab"> Total Metals </label>
+                        <label><input type="checkbox" value="Antimony"> Antimony </label>
+                        <label><input type="checkbox" value="Arsenic"> Arsenic </label>
+                        <label><input type="checkbox" value="Cadmium"> Cadmium </label>
+                        <label><input type="checkbox" value="Chromium"> Chromium </label>
+                        <label><input type="checkbox" value="Cobalt"> Cobalt </label>
+                        <label><input type="checkbox" value="Nickel"> Nickel </label>
+                        <label><input type="checkbox" value="Lead"> Lead </label>
+                        <label><input type="checkbox" value="Zinc"> Zinc </label>
+                        <label><input type="checkbox" value="Molybdenum"> Molybdenum </label>
+                        <label><input type="checkbox" value="Selenium"> Selenium </label>
+                        <label><input type="checkbox" value="Silver"> Silver </label>
+                        <label><input type="checkbox" value="Tin"> Tin </label>
+                        <label><input type="checkbox" value="Vanadium"> Vanadium </label>
+                        <label><input type="checkbox" value="Thallium"> Thallium </label>
+                        <label><input type="checkbox" value="Mercury"> Mercury </label>
+                        <label class="dropcatlab"> 1:5 pH </label>
+                        <label><input type="checkbox" value="Initial pH"> Initial pH  </label>
+                        <label><input type="checkbox" value="After HCl pH"> After HCl pH </label>
+                        <label><input type="checkbox" value="Extraction Fluid Number"> Extraction Fluid Number </label>
+                        <label><input type="checkbox" value="Final pH"> Final pH </label>
+                        <label><input type="checkbox" value="Extraction Fluid Number ZHE"> Extraction Fluid Number ZHE </label>
+                        <label class="dropcatlab"> Petroleum Hydrocarbons </label>
+                        <label><input type="checkbox" value="C6 - C9 Fraction"> TPH C6-C9 </label>
+                        <label><input type="checkbox" value="C10 - C14 Fraction"> TPH C10-C14 </label>
+                        <label><input type="checkbox" value="C15 - C28 Fraction"> TPH C15-C28 </label>
+                        <label><input type="checkbox" value="C29 - C36 Fraction"> TPH C28-C36 </label>
+                        <label><input type="checkbox" value="C10 - C36 Fraction (sum)"> TPH C10-C36 Sum </label>
+                        <label class="dropcatlab"> Recoverable Hydrocarbons </label>
+                        <label><input type="checkbox" value=">C10 - C16 Fraction"> TRH C10-C16 </label>
+                        <label><input type="checkbox" value="C6 - C10 Fraction C6_C10"> TRH C6-C10 </label>
+                        <label><input type="checkbox" value="C6 - C10 Fraction minus BTEX (F1)"> TRH C6-C10 Minus BTEX </label>
+                        <label><input type="checkbox" value=">C16 - C34 Fraction"> TRH C16-C34 </label>
+                        <label><input type="checkbox" value=">C34 - C40 Fraction"> TRH C34-C40 </label>
+                        <label><input type="checkbox" value=">C10 - C40 Fraction (sum)"> TRH C10-C40 Sum </label>
+                        <label><input type="checkbox" value=">C10 - C16 Fraction minus Naphthalene (F2)"> TRH C10-C16 Minus Naphthalene</label>
+                        <label class="dropcatlab"> BTEXN </label>
+                        <label><input type="checkbox" value="Benzene"> Benzene </label>
+                        <label><input type="checkbox" value="Toluene"> Toluene </label>
+                        <label><input type="checkbox" value="Ethylbenzene"> Ethylbenzene </label>
+                        <label><input type="checkbox" value="meta- & para-Xylene"> Meta- & Para- Xylenes </label>
+                        <label><input type="checkbox" value="ortho-Xylene"> Ortho-Xylenes </label>
+                        <label><input type="checkbox" value="Total Xylenes"> Total Xylenes </label>
+                        <label><input type="checkbox" value="Sum of BTEX"> BTEX Sum </label>
+                        <label><input type="checkbox" value="Naphthalene"> Naphthalene </label>
+                    </div>
+                    </div>
+
+                    <!-- PFAS TOPA -->
+                    <div class="group">
+                    <div class="group-header2" data-group="cstclp">PFAS TOPA (click to expand)</div>
+                    <div class="options2" id="cstclp" data-table="[Contaminated Soils]">
+                        <label><input type="checkbox" class="group-select" data-group="cstclp"> Select All </label>
+                        <label class="dropcatlab"> Chloride </label>
+                        <label><input type="checkbox" value="TCLP Chloride"> Chloride </label>
+                        <label class="dropcatlab"> Metals </label>
+                        <label><input type="checkbox" value="TCLP Antimony"> Antimony </label>
+                        <label><input type="checkbox" value="TCLP Arsenic"> Arsenic </label>
+                        <label><input type="checkbox" value="TCLP Cadmium"> Cadmium </label>
+                        <label><input type="checkbox" value="TCLP Chromium"> Chromium </label>
+                        <label><input type="checkbox" value="TCLP Cobalt"> Cobalt </label>
+                        <label><input type="checkbox" value="TCLP Nickel"> Nickel </label>
+                        <label><input type="checkbox" value="TCLP Lead"> Lead </label>
+                        <label><input type="checkbox" value="TCLP Zinc"> Zinc </label>
+                        <label><input type="checkbox" value="TCLP Molybdenum"> Molybdenum </label>
+                        <label><input type="checkbox" value="TCLP Selenium"> Selenium </label>
+                        <label><input type="checkbox" value="TCLP Silver"> Silver </label>
+                        <label><input type="checkbox" value="TCLP Tin"> Tin </label>
+                        <label><input type="checkbox" value="TCLP Vanadium"> Vanadium </label>
+                        <label><input type="checkbox" value="TCLP Thallium"> Thallium </label>
+                        <label><input type="checkbox" value="TCLP Mercury"> Mercury </label>
+                        <label class="dropcatlab"> Petroleum Hydrocarbons </label>
+                        <label><input type="checkbox" value="TCLP C10 - C14 Fraction"> TPH C10-C14 </label>
+                        <label><input type="checkbox" value="TCLP C15 - C28 Fraction"> TPH C15-C28 </label>
+                        <label><input type="checkbox" value="TCLP C29 - C36 Fraction"> TPH C28-C36 </label>
+                        <label><input type="checkbox" value="TCLP C10 - C36 Fraction (sum)"> TPH C10-C36 Sum </label>
+                        <label class="dropcatlab"> Recoverable Hydrocarbons </label>
+                        <label><input type="checkbox" value="TCLP >C10 - C16 Fraction"> TRH C10-C16 </label>
+                        <label><input type="checkbox" value="TCLP >C16 - C34 Fraction"> TRH C16-C34 </label>
+                        <label><input type="checkbox" value="TCLP >C34 - C40 Fraction"> TRH C34-C40 </label>
+                        <label><input type="checkbox" value="TCLP >C10 - C40 Fraction (sum)"> TRH C10-C40 Sum </label>
+                        <label><input type="checkbox" value="TCLP >C10 - C16 Fraction minus Naphthalene (F2)"> TRH C10-C16 Minus Naphthalene</label>
+                    </div>
+                    </div>
+
+                    <!-- Internal Analytes -->
+                    <div class="group">
+                    <div class="group-header3" data-group="cszhe">Internal Analytes (click to expand)</div>
+                    <div class="options3" id="cszhe" data-table="[Contaminated Soils]">
+                        <label><input type="checkbox" class="group-select" data-group="cszhe"> Select All </label>
+                        <label class="dropcatlab"> Petroleum Hydrocarbons </label>
+                        <label><input type="checkbox" value="ZHE C6 - C9 Fraction"> TPH C6-C9 </label>
+                        <label class="dropcatlab"> Recoverable Hydrocarbons </label>
+                        <label><input type="checkbox" value="ZHE C6 - C10 Fraction"> TRH C6-C10 </label>
+                        <label><input type="checkbox" value="ZHE C6 - C10 Fraction  minus BTEX (F1)"> TRH C6-C10 Minus BTEX </label>
+                        <label class="dropcatlab"> BTEXN </label>
+                        <label><input type="checkbox" value="ZHE Benzene"> Benzene </label>
+                        <label><input type="checkbox" value="ZHE Toluene"> Toluene </label>
+                        <label><input type="checkbox" value="ZHE Ethylbenzene"> Ethylbenzene </label>
+                        <label><input type="checkbox" value="ZHE meta- & para-Xylene"> Meta- & Para- Xylenes </label>
+                        <label><input type="checkbox" value="ZHE ortho-Xylene"> Ortho-Xylenes </label>
+                        <label><input type="checkbox" value="ZHE Total Xylenes"> Total Xylenes </label>
+                        <label><input type="checkbox" value="ZHE Sum of BTEX"> BTEX Sum </label>
+                        <label><input type="checkbox" value="ZHE Naphthalene"> Naphthalene </label>
+                    </div>
+                    </div>
+            </div>
+            </div>
+
+            <label class="startd" for="startd">Start Date:</label>
+            <input id="startDate" class="startinput" type="date" id="startd">
+            <label class="endd" for="endd">End Date:</label>
+            <input id="endDate" class="endinput" type="date" id="endd">
+            
+            <button class="dsdownbutton" id="getValues">Get Selected Analytes</button>
+            <script src="download-lab-script.js"></script>
+            <script>
+                 // Expand/collapse groups
+                document.querySelectorAll(".group-header1, .group-header2, .group-header3").forEach(header => {
+                header.addEventListener("click", () => {
+                    const groupId = header.getAttribute("data-group");
+                    const optionsDiv = document.getElementById(groupId);
+                    optionsDiv.style.display = optionsDiv.style.display === "block" ? "none" : "block";
+                });
+                });
+ 
+                // Select all functionality
+                document.querySelectorAll(".group-select").forEach(selectAll => {
+                selectAll.addEventListener("change", function () {
+                    const groupId = this.getAttribute("data-group");
+                    // Find the parent container of the select all checkbox, then find all checkboxes within it
+                    const container = this.closest('.options1, .options2, .options3');
+                    if (!container) return;
+
+                    const checkboxes = container.querySelectorAll(`input[type='checkbox']:not(.group-select)`);
+                    checkboxes.forEach(cb => cb.checked = this.checked);
+                });
+                });
+            </script>
         </div>
         <footer class="footer">
             <p class="footertext">Got a recommendation or a problem that needs solving? Contact us <a class="cont-lk" onclick="href='Contact.html'">here!</a></p>
