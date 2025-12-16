@@ -267,9 +267,10 @@ html,body{
     display:block;
     position:absolute;
     align-self: center;
+    text-align:center;
     font-size:2vh;
-    left:15%;
     top:50%;
+    padding:2% 5%;
 }
 
 .feedback-form{
