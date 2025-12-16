@@ -674,6 +674,26 @@ html,body{
     color:blue;
  }
 
+  .ds-down-pfas{
+    display:block;
+    justify-content: space-between;
+    padding:1vh 1vh;
+    text-align: left;
+    width:fit-content;
+    color:#1b96c8;
+    font-size:1.8vh;
+    text-decoration: underline;
+    position:absolute;
+    top: 72.5%;
+    left:2%;
+    transition-duration: 0.3s;
+ }
+
+ .ds-down:hover{
+    color:blue;
+ }
+
+
   .topa-down{
     display:block;
     justify-content: space-between;
@@ -750,6 +770,25 @@ html,body{
     color:blue;
  }
 
+.bio-down{
+    display:block;
+    justify-content: space-between;
+    padding:1vh 1vh;
+    text-align: left;
+    width:fit-content;
+    color:#1b96c8;
+    font-size:1.8vh;
+    text-decoration: underline;
+    position:absolute;
+    top: 77.5%;
+    left:2%;
+    transition-duration: 0.3s;
+ }
+
+.bio-down:hover{
+    color:blue;
+ }
+
 .dms-down{
     display:block;
     justify-content: space-between;
@@ -806,6 +845,26 @@ html,body{
 .spad-down:hover{
     color:blue;
 }
+
+ .pump-well-down{
+    display:block;
+    justify-content: space-between;
+    padding:1vh 1vh;
+    text-align: left;
+    width:fit-content;
+    color:#1b96c8;
+    font-size:1.8vh;
+    text-decoration: underline;
+    position:absolute;
+    top: 72.5%;
+    left:79%;
+    transition-duration: 0.3s;
+ }
+
+.pump-well-down:hover{
+    color:blue;
+ }
+
 
 .download-title{
     position:absolute;
