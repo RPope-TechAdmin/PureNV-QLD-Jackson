@@ -434,16 +434,19 @@ html,body{
 }
 
 .liquid-options {
-    display:block;
+    display:flex;
     justify-content: space-between;
-    text-align: left;
-    width:45%;
+    text-align: center;
+    height:40%;
+    width:80%;
     color:#1b96c8;
     font-size:2vh;
-    width:45%;
+    flex-wrap: wrap;
+    gap:3%;
+    list-style-type: none;
     position:absolute;
     top:27.5%;
-    left:2.5%;
+    left:5%;
 }
     .liquid-options li {
         position:relative;
@@ -487,10 +490,21 @@ html,body{
         .tooltip:hover .tooltiptext {
             visibility: visible;
         }
+
 .test-format {
-    color:#1b96c8;
+    display:flex;
+    list-style-type: none;
+    justify-content:space-between;
+    padding:2vh 4vh;
+    gap:5%;
+    width:max-content;
+    font-weight:600;
+    text-align: left;
+    color:#fefefe;
+    border-radius: 50%;
+    background-color:#1b96c8;
     text-decoration: none;
-    font-size:2vh;
+    font-size:2.2vh;
 }
 
 .solid-head {
@@ -1049,4 +1063,17 @@ select{
     color:#ffffff;
     font-weight: 500;
     font-size:2vh;
+}
+
+.ds-format{
+    display:block;
+    position:absolute;
+    justify-content:space-between;
+    padding:5vh,5vh;
+    text-align: left;
+    width:fit-content;
+    color:#1b96c8;
+    font-size:1.8vh;
+    top:50%;
+    left:2%;
 }
