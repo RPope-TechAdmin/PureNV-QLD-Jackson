@@ -1,3 +1,13 @@
+function showLoading() {
+  document.getElementById("loadingOverlay").style.display = "flex";
+  document.querySelector("button").disabled = true;
+}
+
+function hideLoading() {
+  document.getElementById("loadingOverlay").style.display = "none";
+  document.querySelector("button").disabled = false;
+}
+
 function showError(message) {
   const errorDiv = document.getElementById("feedbackError");
   errorDiv.style.display = "block";
@@ -11,6 +21,8 @@ function showSuccess(message) {
 }
 
 async function sendFeedback(name, feedback) {
+  showLoading();
+
   const res = await fetch("https://jackson-backend-jackson-e0bycnfwgrhzana9.australiaeast-01.azurewebsites.net/api/feedback", {
     method: "POST",
     headers: {
@@ -45,4 +57,6 @@ document.getElementById("feedbackForm").addEventListener("submit", async (e) => 
   }
 
   await sendFeedback(name, feedback);
+  
+  hideLoading();
 });
