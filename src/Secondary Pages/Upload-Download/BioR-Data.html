@@ -37,6 +37,56 @@
             <div class="decal">
                 <img src="Assets/images/Horizontal_Decal.png" alt="PureNV-Decal"/>
             </div>
+            <H3 class="download-title">From here, you can use the analyte selector below that to choose what data you wish to download.</H3>
+            <div class="updown-container">
+                <div class="dropdown-dsdams">
+                    <!-- External Analytes -->
+                    <div class="group">
+                    <div class="group-header2" data-group="bior">Physical Properties (expand)</div>
+                    <div class="options2" id="bior" data-table="[Bioremediation Testing]">
+                        <label><input type="checkbox" class="group-select" data-group="bior"> Select All </label>
+                        <label><input type="checkbox" value="Moisture Content"> Moisture Content </label>
+                        <label><input type="checkbox" value="Nitrite + Nitrate as N (Sol.)"> Nitrite + Nitrate As N </label>
+                        <label><input type="checkbox" value="Total Kjeldahl Nitrogen as N"> Total Kjeldahl Nitrogen As N </label>
+                        <label><input type="checkbox" value="Total Nitrogen as N"> Total Nitrogen As N </label>
+                        <label><input type="checkbox" value="Total Organic Carbon"> Total Organic Carbon </label>
+                        <label><input type="checkbox" value="Thermotolerant Coliforms"> Thermotolerant Coliforms </label>
+                        <label><input type="checkbox" value="E.coli by MPN"> E.coli by MPN </label>
+                    </div>
+                    </div>
+            </div>
+            </div>
+
+            <label class="startd" for="startd">Start Date:</label>
+            <input id="startDate" class="startinput" type="date" id="startd">
+            <label class="endd" for="endd">End Date:</label>
+            <input id="endDate" class="endinput" type="date" id="endd">
+            
+            <button class="dsdownbutton" id="getValues">Get Selected Analytes</button>
+            <script src="download-lab-script.js"></script>
+            <script>
+                 // Expand/collapse groups
+                document.querySelectorAll(".group-header1, .group-header2, .group-header3").forEach(header => {
+                header.addEventListener("click", () => {
+                    const groupId = header.getAttribute("data-group");
+                    const optionsDiv = document.getElementById(groupId);
+                    optionsDiv.style.display = optionsDiv.style.display === "block" ? "none" : "block";
+                });
+                });
+
+                // Select all functionality
+                document.querySelectorAll(".group-select").forEach(selectAll => {
+                selectAll.addEventListener("change", function () {
+                    const groupId = this.getAttribute("data-group");
+                    // Find the parent container of the select all checkbox, then find all checkboxes within it
+                    const container = this.closest('.options1, .options2, .options3');
+                    if (!container) return;
+
+                    const checkboxes = container.querySelectorAll(`input[type='checkbox']:not(.group-select)`);
+                    checkboxes.forEach(cb => cb.checked = this.checked);
+                });
+                });
+            </script>
         </div>
         <footer class="footer">
             <p class="footertext">Got a recommendation or a problem that needs solving? Contact us <a class="cont-lk" onclick="href='Contact.html'">here!</a></p>

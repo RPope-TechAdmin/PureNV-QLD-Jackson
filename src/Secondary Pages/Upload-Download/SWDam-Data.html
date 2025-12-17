@@ -43,15 +43,20 @@
                     <!-- External Analytes -->
                     <div class="group">
                     <div class="group-header1" data-group="swall">External Analytes (click to expand)</div>
-                    <div class="options1" id="swall" data-table="[SWAll]">
+                    <div class="options1" id="swall" data-table="[Stormwater]">
                         <label><input type="checkbox" class="group-select" data-group="swall"> Select All </label>
-                        <label><input type="checkbox" value="pH"> pH </label>
-                        <label><input type="checkbox" value="TDS"> TDS </label>
+                        <label class="dropcatlab"> Physical Properties </label>
+                        <label><input type="checkbox" value="pH Value"> pH </label>
+                        <label><input type="checkbox" value="Total Dissolved Solids @180°C"> TDS </label>
+                        <label class="dropcatlab"> Soluble Cations </label>
                         <label><input type="checkbox" value="Calcium"> Calcium </label>
                         <label><input type="checkbox" value="Magnesium"> Magnesium </label>
                         <label><input type="checkbox" value="Sodium"> Sodium </label>
                         <label><input type="checkbox" value="Potassium"> Potassium </label>
+                        <label class="dropcatlab"> Metals </label>
                         <label><input type="checkbox" value="Arsenic"> Arsenic </label>
+                        <label><input type="checkbox" value="Beryllium"> Beryllium </label>
+                        <label><input type="checkbox" value="Barium"> Barium </label>
                         <label><input type="checkbox" value="Cadmium"> Cadmium </label>
                         <label><input type="checkbox" value="Chromium"> Chromium </label>
                         <label><input type="checkbox" value="Copper"> Copper </label>
@@ -67,16 +72,20 @@
                         <label><input type="checkbox" value="Mercury"> Mercury </label>
                         <label><input type="checkbox" value="Trivalent Chromium"> Trivalent Chromium </label>
                         <label><input type="checkbox" value="Hexavalent Chromium"> Hexavalent Chromium </label>
-                        <label><input type="checkbox" value="TPH C6-C9"> TPH C6-C9 </label>
-                        <label><input type="checkbox" value="TPH C10-C14"> TPH C10-C14 </label>
-                        <label><input type="checkbox" value="TPH C15-C28"> TPH C15-C28 </label>
-                        <label><input type="checkbox" value="TPH C29-C36"> TPH C28-C36 </label>
-                        <label><input type="checkbox" value="TPH C10-C36 Sum"> TPH C10-C36 Sum </label>
-                        <label><input type="checkbox" value="TRH C10-C16"> TRH C10-C16 </label>
-                        <label><input type="checkbox" value="TRH C16-C34"> TRH C16-C34 </label>
-                        <label><input type="checkbox" value="TRH C34-C40"> TRH C34-C40 </label>
-                        <label><input type="checkbox" value="TRH C10-C40 Sum"> TRH C10-C40 Sum </label>
-                        <label><input type="checkbox" value="TRH C10-C16 Minus Naphthalene"> TRH C10-C16 Minus Naphthalene</label>
+                        <label class="dropcatlab"> Petroleum Hydrocarbons </label>
+                        <label><input type="checkbox" value="C6-C9 Fraction"> TPH C6-C9 </label>
+                        <label><input type="checkbox" value="C10-C14 Fraction"> TPH C10-C14 </label>
+                        <label><input type="checkbox" value="C15-C28 Fraction"> TPH C15-C28 </label>
+                        <label><input type="checkbox" value="C29-C36 Fraction"> TPH C28-C36 </label>
+                        <label><input type="checkbox" value="C10-C36 Fraction (sum)"> TPH C10-C36 Sum </label>
+                        <label><input type="checkbox" value="C6-C10"> TRH C6-C10 </label>
+                        <label><input type="checkbox" value="C6-C10 Minus BTEX (F1)"> C6-C10 Minus BTEX </label>
+                        <label><input type="checkbox" value=">C10-C16 Fraction"> TRH C10-C16 </label>
+                        <label><input type="checkbox" value=">C16-C34 Fraction"> TRH C16-C34 </label>
+                        <label><input type="checkbox" value=">C34-C40 Fraction"> TRH C34-C40 </label>
+                        <label><input type="checkbox" value=">C10-C40 Fraction (sum)"> TRH C10-C40 Sum </label>
+                        <label><input type="checkbox" value=">C10-C16 Minus Naphthalene (F2)"> TRH C10-C16 Minus Naphthalene</label>
+                        <label class="dropcatlab"> Phenols </label>
                         <label><input type="checkbox" value="Phenol"> Phenol </label>
                         <label><input type="checkbox" value="2-Chlorophenol"> 2-chlorophenol </label>
                         <label><input type="checkbox" value="2-Methylphenol"> 2-methylphenol </label>
@@ -89,6 +98,7 @@
                         <label><input type="checkbox" value="2.4.6-Trichlorophenol"> 2,4,6-trichlorophenol </label>
                         <label><input type="checkbox" value="2.4.5-Trichlorophenol"> 2,4,5-trichlorophenol </label>
                         <label><input type="checkbox" value="Pentachlorophenol"> Pentachlorophenol </label>
+                        <label class="dropcatlab"> PAH's </label>
                         <label><input type="checkbox" value="PAH Naphthalene"> PAH Naphthalene </label>
                         <label><input type="checkbox" value="Acenaphthylene"> Acenaphthalene </label>
                         <label><input type="checkbox" value="Acenaphthene"> Acenaphthene </label>
@@ -107,8 +117,7 @@
                         <label><input type="checkbox" value="Benzo(g.h.i)perylene"> Benzo(g.h.i)perylene </label>
                         <label><input type="checkbox" value="Sum of polycyclic aromatic hydrocarbons"> Sum of PAH's </label>
                         <label><input type="checkbox" value="Benzo(a)pyrene TEQ (zero)"> Benzo(a)pyrene TEQ (zero) </label>
-                        <label><input type="checkbox" value="TRH C6-C10"> TRH C6-C10 </label>
-                        <label><input type="checkbox" value="C6-C10 Minus BTEX"> C6-C10 Minus BTEX </label>
+                        <label class="dropcatlab"> BTEXN </label>
                         <label><input type="checkbox" value="Benzene"> Benzene </label>
                         <label><input type="checkbox" value="Toluene"> Toluene </label>
                         <label><input type="checkbox" value="Ethylbenzene"> Ethylbenzene </label>
@@ -117,72 +126,25 @@
                         <label><input type="checkbox" value="Total Xylenes"> Total Xylenes </label>
                         <label><input type="checkbox" value="Sum of BTEX"> BTEX Sum </label>
                         <label><input type="checkbox" value="BTEXN Naphthalene"> Naphthalene </label>
-                        <label><input type="checkbox" value="Phenol-d6"> Phenol-D6 </label>
-                        <label><input type="checkbox" value="2-Chlorophenol-D4"> 2-Chlorophenol-D4 </label>
-                        <label><input type="checkbox" value="2.4.6-Tribromophenol"> 2,4,6-Tribromophenol </label>
-                        <label><input type="checkbox" value="2-Fluorobiphenyl"> 2-Fluorobiphenyl </label>
-                        <label><input type="checkbox" value="Anthracene-d10"> Anthracene-D10 </label>
-                        <label><input type="checkbox" value="4-Terphenyl-d14"> 4-Terphenyl-D14 </label>
-                        <label><input type="checkbox" value="1.2-Dichloroethane-D4"> 1,2-Dichloroethane-D4 </label>
-                        <label><input type="checkbox" value="Toluene-D8"> Toluene-D8 </label>
-                        <label><input type="checkbox" value="4-Bromofluorobenzene"> 4-Bromofluorobenzene </label>
                     </div>
                     </div>
-
-                    <!-- PFAS TOPA -->
+                    
                     <div class="group">
-                    <div class="group-header2" data-group="swpfas">PFAS TOPA (click to expand)</div>
-                    <div class="options2" id="swpfas" data-table="[SWPFAS]">
-                        <label><input type="checkbox" class="group-select" data-group="swpfas"> Select All </label>
-                        <label><input type="checkbox" value="Perfluoropropane sulfonic acid (PFPrS)"> Perfluoropropane sulfonic acid </label>
-                        <label><input type="checkbox" value="Perfluorobutane sulfonic acid (PFBS)"> Perfluorobutane sulfonic acid </label>
-                        <label><input type="checkbox" value="Perfluoropentane sulfonic acid (PFPeS)"> Perfluoropentane sulfonic acid </label>
-                        <label><input type="checkbox" value="Perfluorohexane sulfonic acid (PFHxS)"> Perfluorohexane sulfonic acid </label>
-                        <label><input type="checkbox" value="Perfluoroheptane sulfonic acid (PFHpS)"> Perfluoroheptane sulfonic acid</label>
-                        <label><input type="checkbox" value="Perflurooctane sulfonic acid (PFOS)"> Perflurooctane sulfonic acid </label>
-                        <label><input type="checkbox" value="Perfluorononane sulfonic acid (PFNS)"> Perfluorononane sulfonic acid (PFNS) </label>
-                        <label><input type="checkbox" value="Perfluorodecane sulfonic acid (PFDS)"> Perfluorodecane sulfonic acid </label>
-                        <label><input type="checkbox" value="Perfluorobutanoic acid (PFBA)"> Perfluorobutanoic acid </label>
-                        <label><input type="checkbox" value="Perfluoropentanoic acid (PFPeA)"> Perfluoropentanoic acid </label>
-                        <label><input type="checkbox" value="Perfluorohexanoic acid (PFHxA)"> Perfluorohexanoic acid </label>
-                        <label><input type="checkbox" value="Perfluoroheptanoic acid (PFHpA)"> Perfluoroheptanoic acid </label>
-                        <label><input type="checkbox" value="Perfluorooctanoic acid (PFOA)"> Perfluorooctanoic acid </label>
-                        <label><input type="checkbox" value="Perfluorononanoic acid (PFNA)"> Perfluorononanoic acid </label>
-                        <label><input type="checkbox" value="Perfluorodecanoic acid (PFDA)"> Perfluorodecanoic acid </label>
-                        <label><input type="checkbox" value="Perfluoroundecanoic acid (PFOA)"> Perfluoroundecanoic acid </label>
-                        <label><input type="checkbox" value="Perfluorododecanoic acid (PFDoDA)"> Perfluorododecanoic acid </label>
-                        <label><input type="checkbox" value="Perfluorotridecanoic acid (PFTrDA)"> Perfluorotridecanoic acid </label>
-                        <label><input type="checkbox" value="Perfluorotetradecanoic acid (PFTeDA)"> Perfluorotetradecanoic acid </label>
-                        <label><input type="checkbox" value="perfluorohexadecanoic Acid (PFHxDA)"> Perfluorooctane Sulfonamide </label>
-                        <label><input type="checkbox" value="Perfluorooctane sulfonamide (FOSA)"> Perfluorooctane Sulfonamide </label>
-                        <label><input type="checkbox" value="N-Methyl perfluorooctane sulfonamide (MeFOSA)"> N-Methyl Perfluorooctane Sulfonamide </label>
-                        <label><input type="checkbox" value="N-Ethyl perfluorooctane sulfonamide (EtFOSA)"> N-Ethyl Perfluorooctane Sulfonamide </label>
-                        <label><input type="checkbox" value="N-Methyl perfluorooctane sulfonamidoethanol (MeFOSE)"> N-Methyl Perfluorooctane Sulfonamidoethanol </label>
-                        <label><input type="checkbox" value="N-Ethyl perfluorooctane sulfonamidoethanol (EtFOSE)"> N-Ethyl Perfluorooctane Sulfonamidoethanol </label>
-                        <label><input type="checkbox" value="N-Methyl perfluorooctane sulfonamidoacetic acid (MeFOSAA)"> N-Methyl Perfluorooctane Sulfonamidoacetic acid </label>
-                        <label><input type="checkbox" value="N-Ethyl perfluorooctane sulfonamidoacetic acid (EtFOSAA)"> N-Ethyl Perfluorooctane Sulfonamidoacetic acid </label>
-                        <label><input type="checkbox" value="4:2 Fluorotelemer sulfonic acid (4:2 FTS)"> 4:2 Fluorotelemer sulfonic acid </label>
-                        <label><input type="checkbox" value="6:2 Fluorotelemer sulfonic acid (6:2 FTS)"> 6:2 Fluorotelemer sulfonic acid </label>
-                        <label><input type="checkbox" value="8:2 Fluorotelemer sulfonic acid (8:2 FTS)"> 8:2 Fluorotelemer sulfonic acid </label>
-                        <label><input type="checkbox" value="10:2 Fluorotelemer sulfonic acid (10:2 FTS)"> 10:2 Fluorotelemer sulfonic acid </label>
-                        <label><input type="checkbox" value="Sum of PFAS"> Sum of PFAS </label>
-                        <label><input type="checkbox" value="Sum of PFHxS and PFOS"> Sum of PFHxS & PFOS </label>
-                        <label><input type="checkbox" value="Sum of PFAS (WA DER List)"> Sum of PFAS </label>
-                        <label><input type="checkbox" value="13C4-PFOS"> 13C4-PFOS </label>
-                        <label><input type="checkbox" value="13C8-PFOA"> 13C8-PFOA </label>
-                    </div>
-                    </div>
-
-                    <!-- Internal Analytes -->
-                    <div class="group">
-                    <div class="group-header3" data-group="swint">Internal Analytes (click to expand)</div>
-                    <div class="options3" id="swint" data-table="[SWInt]">
-                        <label><input type="checkbox" class="group-select" data-group="swint"> Select All </label>
-                        <label><input type="checkbox" value="Sulfate as SO4 - Turbidimetric"> Sulphate as SO4 </label>
-                        <label><input type="checkbox" value="Chloride"> Chloride </label>
-                        <label><input type="checkbox" value="Fluoride"> Fluoride </label>
-                        <label><input type="checkbox" value="Total Organic Carbon"> Total Organic Carbon </label>
-                        <label><input type="checkbox" value="Chemical Oxygen Demand"> Chemical Oxygen Demand </label>
+                    <div class="group-header2" data-group="lsfw">Landfill Stormwater (click to expand)</div>
+                    <div class="options2" id="lsfw" data-table="[LandfillSWDischarge]">
+                        <label><input type="checkbox" class="group-select" data-group="lsfw"> Select All </label>
+                        <label><input type="checkbox" value="pHR1"> pH - R1 </label>
+                        <label><input type="checkbox" value="TDSR1"> Total Dissolved Solids - R1 </label>
+                        <label><input type="checkbox" value="ECR1"> Electrical Conductivity - R1 </label>
+                        <label><input type="checkbox" value="DOR1"> Dissolved Oxygen - R1 </label>
+                        <label><input type="checkbox" value="TSSR1"> Total Suspended Solids - R1 </label>
+                        <label><input type="checkbox" value="TOCR1"> Total Organic Carbon - R1 </label>
+                        <label><input type="checkbox" value="pHR2"> pH - R2 </label>
+                        <label><input type="checkbox" value="TDSR2"> Total Dissolved Solids - R2 </label>
+                        <label><input type="checkbox" value="ECR2"> Electrical Conductivity - R2 </label>
+                        <label><input type="checkbox" value="DOR2"> Dissolved Oxygen - R2 </label>
+                        <label><input type="checkbox" value="TSSR2"> Total Suspended Solids - R2 </label>
+                        <label><input type="checkbox" value="TOCR2"> Total Organic Carbon - R2 </label> 
                     </div>
                     </div>
             </div>

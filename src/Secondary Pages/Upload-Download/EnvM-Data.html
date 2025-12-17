@@ -42,29 +42,36 @@
                 <div class="dropdown-dsdams">
                     <!-- External Analytes -->
                     <div class="group">
-                    <div class="group-header1" data-group="envin">Physical Properties (expand)</div>
-                    <div class="options1" id="envin" data-table="[EnvironmentalInSitu]">
+                    <div class="group-header2" data-group="envin">Physical Properties (expand)</div>
+                    <div class="options2" id="envin" data-table="[Environmental Creek]">
                         <label><input type="checkbox" class="group-select" data-group="envin"> Select All </label>
                         <label><input type="checkbox" value="pH"> pH </label>
-                        <label><input type="checkbox" value="EC"> Electrical Conductivity </label>
-                        <label><input type="checkbox" value="TDS"> Total Dissolved Solids </label>
-                        <label><input type="checkbox" value="DO"> Dissolved Oxygen </label>
-                    </div>
-                    </div>
-
-                    <!-- PFAS TOPA -->
-                    <div class="group">
-                    <div class="group-header2" data-group="tchanning">Little Tchanning PFAS (expand)</div>
-                    <div class="options2" id="tchanning" data-table="[LittleTchanningTotalPFAS]">
-                        <label><input type="checkbox" class="group-select" data-group="tchanning"> Select All </label>
+                        <label><input type="checkbox" value="Electrical Conductivity"> Electrical Conductivity </label>
+                        <label><input type="checkbox" value="Total Dissolved Solids"> Total Dissolved Solids </label>
+                        <label><input type="checkbox" value="Suspended Solids (SS)"> Total Suspended Solids </label>
+                        <label><input type="checkbox" value="Total Organic Carbon"> Total Organic Carbon </label>
+                        <label><input type="checkbox" value="Dissolved Arsenic"> Dissolved Arsenic </label>
+                        <label><input type="checkbox" value="Dissolved Cadmium"> Dissolved Cadmium </label>
+                        <label><input type="checkbox" value="Dissolved Chromium"> Dissolved Chromium </label>
+                        <label><input type="checkbox" value="Dissolved Copper"> Dissolved Copper </label>
+                        <label><input type="checkbox" value="Dissolved Lead"> Dissolved Lead </label>
+                        <label><input type="checkbox" value="Dissolved Nickel"> Dissolved Nickel </label>
+                        <label><input type="checkbox" value="Dissolved Zinc"> Dissolved Zinc </label>
+                        <label><input type="checkbox" value="Dissolved Mercury"> Dissolved Mercury </label>
+                        <label><input type="checkbox" value="Arsenic"> Arsenic </label>
+                        <label><input type="checkbox" value="Cadmium"> Cadmium </label>
+                        <label><input type="checkbox" value="Chromium"> Chromium </label>
+                        <label><input type="checkbox" value="Copper"> Copper </label>
+                        <label><input type="checkbox" value="Lead"> Lead  </label>
+                        <label><input type="checkbox" value="Nickel"> Nickel </label>
+                        <label><input type="checkbox" value="Zinc"> Zinc  </label>
+                        <label><input type="checkbox" value="Mercury"> Mercury  </label>
                         <label class="dropcatlab"> Sulfonic Acids </label>
-                        <label><input type="checkbox" value="Perfluoropropane sulfonic acid (PFPrS)"> Perfluoropropane sulfonic acid </label>
                         <label><input type="checkbox" value="Perfluorobutane sulfonic acid (PFBS)"> Perfluorobutane sulfonic acid </label>
                         <label><input type="checkbox" value="Perfluoropentane sulfonic acid (PFPeS)"> Perfluoropentane sulfonic acid </label>
                         <label><input type="checkbox" value="Perfluorohexane sulfonic acid (PFHxS)"> Perfluorohexane sulfonic acid </label>
                         <label><input type="checkbox" value="Perfluoroheptane sulfonic acid (PFHpS)"> Perfluoroheptane sulfonic acid</label>
                         <label><input type="checkbox" value="Perfluorooctane sulfonic acid (PFOS)"> Perflurooctane sulfonic acid </label>
-                        <label><input type="checkbox" value="Perfluorononane sulfonic acid (PFNS)"> Perfluorononane sulfonic acid </label>
                         <label><input type="checkbox" value="Perfluorodecane sulfonic acid (PFDS)"> Perfluorodecane sulfonic acid </label>
                         <label class="dropcatlab"> Alkyl Acids </label>
                         <label><input type="checkbox" value="Perfluorobutanoic acid (PFBA)"> Perfluorobutanoic acid </label>
@@ -78,7 +85,6 @@
                         <label><input type="checkbox" value="Perfluorododecanoic acid (PFDoDA)"> Perfluorododecanoic acid </label>
                         <label><input type="checkbox" value="Perfluorotridecanoic acid (PFTrDA)"> Perfluorotridecanoic acid </label>
                         <label><input type="checkbox" value="Perfluorotetradecanoic acid (PFTeDA)"> Perfluorotetradecanoic acid </label>
-                        <label><input type="checkbox" value="perfluorohexadecanoic Acid (PFHxDA)"> Perfluorooctane Sulfonamide </label>
                         <label class="dropcatlab"> Sulfonamides </label>
                         <label><input type="checkbox" value="Perfluorooctane sulfonamide (FOSA)"> Perfluorooctane Sulfonamide </label>
                         <label><input type="checkbox" value="N-Methyl perfluorooctane sulfonamide (MeFOSA)"> N-Methyl Perfluorooctane Sulfonamide </label>
@@ -96,59 +102,9 @@
                         <label><input type="checkbox" value="Sum of PFAS"> Sum of PFAS </label>
                         <label><input type="checkbox" value="Sum of PFHxS and PFOS"> Sum of PFHxS & PFOS </label>
                         <label><input type="checkbox" value="Sum of PFAS (WA DER List)"> Sum of PFAS </label>
-                        <label class="dropcatlab"> Surrogates </label>
-                        <label><input type="checkbox" value="13C4-PFOS"> 13C4-PFOS </label>
-                        <label><input type="checkbox" value="13C8-PFOA"> 13C8-PFOA </label>
+                        <label class="dropcatlab"> Total Organic Fluorine </label>
+                        <label><input type="checkbox" value="Total Organic Fluorine"> Total Organic Fluorine </label>
                     </div>
-                    </div>
-
-                    <!-- Internal Analytes -->
-                    <div class="group">
-                    <div class="group-header3" data-group="moonapools">Moona Pools Total PFAS (expand)</div>
-                    <div class="options3" id="moonapools" data-table="[MoonaPoolsTotalPFAS]">
-                        <label><input type="checkbox" class="group-select" data-group="moonapools"> Select All </label>
-                        <label class="dropcatlab"> Sulfonic Acids </label>
-                        <label><input type="checkbox" value="Perfluoropropane sulfonic acid (PFPrS)"> Perfluoropropane sulfonic acid </label>
-                        <label><input type="checkbox" value="Perfluorobutane sulfonic acid (PFBS)"> Perfluorobutane sulfonic acid </label>
-                        <label><input type="checkbox" value="Perfluoropentane sulfonic acid (PFPeS)"> Perfluoropentane sulfonic acid </label>
-                        <label><input type="checkbox" value="Perfluorohexane sulfonic acid (PFHxS)"> Perfluorohexane sulfonic acid </label>
-                        <label><input type="checkbox" value="Perfluoroheptane sulfonic acid (PFHpS)"> Perfluoroheptane sulfonic acid</label>
-                        <label><input type="checkbox" value="Perfluorooctane sulfonic acid (PFOS)"> Perflurooctane sulfonic acid </label>
-                        <label><input type="checkbox" value="Perfluorononane sulfonic acid (PFNS)"> Perfluorononane sulfonic acid </label>
-                        <label><input type="checkbox" value="Perfluorodecane sulfonic acid (PFDS)"> Perfluorodecane sulfonic acid </label>
-                        <label class="dropcatlab"> Alkyl Acids </label>
-                        <label><input type="checkbox" value="Perfluorobutanoic acid (PFBA)"> Perfluorobutanoic acid </label>
-                        <label><input type="checkbox" value="Perfluoropentanoic acid (PFPeA)"> Perfluoropentanoic acid </label>
-                        <label><input type="checkbox" value="Perfluorohexanoic acid (PFHxA)"> Perfluorohexanoic acid </label>
-                        <label><input type="checkbox" value="Perfluoroheptanoic acid (PFHpA)"> Perfluoroheptanoic acid </label>
-                        <label><input type="checkbox" value="Perfluorooctanoic acid (PFOA)"> Perfluorooctanoic acid </label>
-                        <label><input type="checkbox" value="Perfluorononanoic acid (PFNA)"> Perfluorononanoic acid </label>
-                        <label><input type="checkbox" value="Perfluorodecanoic acid (PFDA)"> Perfluorodecanoic acid </label>
-                        <label><input type="checkbox" value="Perfluoroundecanoic acid (PFUnDA)"> Perfluoroundecanoic acid </label>
-                        <label><input type="checkbox" value="Perfluorododecanoic acid (PFDoDA)"> Perfluorododecanoic acid </label>
-                        <label><input type="checkbox" value="Perfluorotridecanoic acid (PFTrDA)"> Perfluorotridecanoic acid </label>
-                        <label><input type="checkbox" value="Perfluorotetradecanoic acid (PFTeDA)"> Perfluorotetradecanoic acid </label>
-                        <label><input type="checkbox" value="perfluorohexadecanoic Acid (PFHxDA)"> Perfluorooctane Sulfonamide </label>
-                        <label class="dropcatlab"> Sulfonamides </label>
-                        <label><input type="checkbox" value="Perfluorooctane sulfonamide (FOSA)"> Perfluorooctane Sulfonamide </label>
-                        <label><input type="checkbox" value="N-Methyl perfluorooctane sulfonamide (MeFOSA)"> N-Methyl Perfluorooctane Sulfonamide </label>
-                        <label><input type="checkbox" value="N-Ethyl perfluorooctane sulfonamide (EtFOSA)"> N-Ethyl Perfluorooctane Sulfonamide </label>
-                        <label><input type="checkbox" value="N-Methyl perfluorooctane sulfonamidoethanol (MeFOSE)"> N-Methyl Perfluorooctane Sulfonamidoethanol </label>
-                        <label><input type="checkbox" value="N-Ethyl perfluorooctane sulfonamidoethanol (EtFOSE)"> N-Ethyl Perfluorooctane Sulfonamidoethanol </label>
-                        <label><input type="checkbox" value="N-Methyl perfluorooctane sulfonamidoacetic acid (MeFOSAA)"> N-Methyl Perfluorooctane Sulfonamidoacetic acid </label>
-                        <label><input type="checkbox" value="N-Ethyl perfluorooctane sulfonamidoacetic acid (EtFOSAA)"> N-Ethyl Perfluorooctane Sulfonamidoacetic acid </label>
-                        <label class="dropcatlab"> Fluorotelemers </label>
-                        <label><input type="checkbox" value="4:2 Fluorotelomer sulfonic acid (4:2 FTS)"> 4:2 Fluorotelemer sulfonic acid </label>
-                        <label><input type="checkbox" value="6:2 Fluorotelomer sulfonic acid (6:2 FTS)"> 6:2 Fluorotelemer sulfonic acid </label>
-                        <label><input type="checkbox" value="8:2 Fluorotelomer sulfonic acid (8:2 FTS)"> 8:2 Fluorotelemer sulfonic acid </label>
-                        <label><input type="checkbox" value="10:2 Fluorotelomer sulfonic acid (10:2 FTS)"> 10:2 Fluorotelemer sulfonic acid </label>
-                        <label class="dropcatlab"> Sums </label>
-                        <label><input type="checkbox" value="Sum of PFAS"> Sum of PFAS </label>
-                        <label><input type="checkbox" value="Sum of PFHxS and PFOS"> Sum of PFHxS & PFOS </label>
-                        <label><input type="checkbox" value="Sum of PFAS (WA DER List)"> Sum of PFAS </label>
-                        <label class="dropcatlab"> Surrogates </label>
-                        <label><input type="checkbox" value="13C4-PFOS"> 13C4-PFOS </label>
-                        <label><input type="checkbox" value="13C8-PFOA"> 13C8-PFOA </label>                    </div>
                     </div>
             </div>
             </div>
